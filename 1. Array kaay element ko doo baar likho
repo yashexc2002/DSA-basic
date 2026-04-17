@@ -1,0 +1,11 @@
+int n = nums.size();   // size use hoga array mai aur length hoga string mai
+
+vector<int>ans(n*2)     // kyuki ans array mai doo baar same number jayenge toh double size
+
+for(int i = 0; i<n; i++){
+ans[i] = nums[i];      // ans mai array ka element
+ans[i+n] = nums[i];    //ans mai same elemet but i+n is liye laga kyuki n nums ka size hai toh double kaay aage ka
+}
+
+return ans;  ab yaha pr return kar diye ans ko
+}
